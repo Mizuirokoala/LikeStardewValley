@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerAnimationTest : MonoBehaviour
 {
-    //Player Animation Params
     public float inputX;
     public float inputY;
     public bool isWalking;
@@ -28,21 +27,18 @@ public class PlayerAnimationTest : MonoBehaviour
     public bool isSwingingToolLeft;
     public bool isSwingingToolUp;
     public bool isSwingingToolDown;
-
-    //Shared Animation Params
-    public bool idleRight;
-    public bool idleLeft;
     public bool idleUp;
     public bool idleDown;
+    public bool idleLeft;
+    public bool idleRight;
 
     private void Update()
     {
-        EventHandler.MovementCallEvent(inputX, inputY, isWalking, isRunning, isIdle, isCarrying,
-            toolEffect,
-            isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
-            isLiftingToolRight, isLiftingToolLeft, isLiftingToolUp, isLiftingToolDown,
-            isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
-            isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-            idleRight, idleLeft, idleUp, idleDown);
+        EventHandler.CallMovementEvent(inputX, inputY, isWalking, isRunning, isIdle, isCarrying, toolEffect,
+isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+isLiftingToolRight, isLiftingToolLeft, isLiftingToolUp, isLiftingToolDown,
+isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
+isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
+idleUp, idleDown, idleLeft, idleRight);
     }
 }

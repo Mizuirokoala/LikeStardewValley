@@ -2,13 +2,11 @@ using UnityEngine;
 
 public static class Settings
 {
-    //Player Animation Params
+    // Player Animation Parameters
     public static int xInput;
     public static int yInput;
     public static int isWalking;
     public static int isRunning;
-    public static int isIdle;
-    public static int isCarrying;
     public static int toolEffect;
     public static int isUsingToolRight;
     public static int isUsingToolLeft;
@@ -18,17 +16,17 @@ public static class Settings
     public static int isLiftingToolLeft;
     public static int isLiftingToolUp;
     public static int isLiftingToolDown;
-    public static int isPickingRight;
-    public static int isPickingLeft;
-    public static int isPickingUp;
-    public static int isPickingDown;
     public static int isSwingingToolRight;
     public static int isSwingingToolLeft;
     public static int isSwingingToolUp;
     public static int isSwingingToolDown;
+    public static int isPickingRight;
+    public static int isPickingLeft;
+    public static int isPickingUp;
+    public static int isPickingDown;
 
-    //Shared Animation Params
-    public static int idleUp; 
+    // Shared Animation Parameters
+    public static int idleUp;
     public static int idleDown;
     public static int idleLeft;
     public static int idleRight;
@@ -57,10 +55,11 @@ public static class Settings
         isPickingUp = Animator.StringToHash("isPickingUp");
         isPickingDown = Animator.StringToHash("isPickingDown");
 
-        idleRight = Animator.StringToHash("idleRight");
-        idleLeft = Animator.StringToHash("idleLeft");
+        // Shared Animation parameters
         idleUp = Animator.StringToHash("idleUp");
         idleDown = Animator.StringToHash("idleDown");
+        idleLeft = Animator.StringToHash("idleLeft");
+        idleRight = Animator.StringToHash("idleRight");
     }
 
 }
