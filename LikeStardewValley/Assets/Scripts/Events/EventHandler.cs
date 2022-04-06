@@ -1,4 +1,3 @@
-
 public delegate void MovementDelegate(float inputX, float inputY, bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
     ToolEffect toolEffect,
     bool isUsingToolRight, bool isUsingToolLeft, bool isUsingToolUp, bool isUsingToolDown,
@@ -31,8 +30,5 @@ public static class EventHandler
             isSwingToolRight, isSwingToolLeft, isSwingToolUp, isSwingToolDown,
             idleRight, idleLeft, idleUp, idleDown);
     
-    
     }
-
-
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementAnimationParameterController : MonoBehaviour
@@ -19,19 +17,19 @@ public class MovementAnimationParameterController : MonoBehaviour
 
     private void OnDisable()
     {
-        EventHandler.MovementEvent += SetAnimationParameters;
+        EventHandler.MovementEvent -= SetAnimationParameters;
     }
 
-    private void SetAnimationParameters(float inputX, float inputY, bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
+    private void SetAnimationParameters(float xInput, float yInput, bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
     ToolEffect toolEffect,
     bool isUsingToolRight, bool isUsingToolLeft, bool isUsingToolUp, bool isUsingToolDown,
     bool isLiftingToolRight, bool isLiftingToolLeft, bool isLiftingToolUp, bool isLiftingToolDown,
     bool isPickingRight, bool isPickingLeft, bool isPickingUp, bool isPickingDown,
-    bool isSwingToolRight, bool isSwingToolLeft, bool isSwingToolUp, bool isSwingToolDown,
-    bool idleRight, bool idleLeft, bool idleUp, bool idleDown)
+    bool isSwingingToolRight, bool isSwingingToolLeft, bool isSwingingToolUp, bool isSwingingToolDown,
+    bool idleUp, bool idleDown, bool idleLeft, bool idleRight)
     {
-        animator.SetFloat(Settings.inputX, inputX);
-        animator.SetFloat(Settings.inputY, inputY);
+        animator.SetFloat(Settings.xInput, xInput);
+        animator.SetFloat(Settings.yInput, yInput);
         animator.SetBool(Settings.isWalking, isWalking);
         animator.SetBool(Settings.isRunning, isRunning);
 
@@ -53,16 +51,15 @@ public class MovementAnimationParameterController : MonoBehaviour
         if (isPickingDown) animator.SetTrigger(Settings.isPickingDown);
 
 
-        if (isSwingToolRight) animator.SetTrigger(Settings.isSwingToolRight);
-        if (isSwingToolLeft) animator.SetTrigger(Settings.isSwingToolLeft);
-        if (isSwingToolUp) animator.SetTrigger(Settings.isSwingToolUp);
-        if (isSwingToolDown) animator.SetTrigger(Settings.isSwingToolDown);
+        if (isSwingingToolRight) animator.SetTrigger(Settings.isSwingingToolRight);
+        if (isSwingingToolLeft) animator.SetTrigger(Settings.isSwingingToolLeft);
+        if (isSwingingToolUp) animator.SetTrigger(Settings.isSwingingToolUp);
+        if (isSwingingToolDown) animator.SetTrigger(Settings.isSwingingToolDown);
 
         if (idleRight) animator.SetTrigger(Settings.idleRight);
         if (idleLeft) animator.SetTrigger(Settings.idleLeft);
         if (idleUp) animator.SetTrigger(Settings.idleUp);
         if (idleDown) animator.SetTrigger(Settings.idleDown);
-
     }
 
     private void AnimationEventPlayFootstepSound()

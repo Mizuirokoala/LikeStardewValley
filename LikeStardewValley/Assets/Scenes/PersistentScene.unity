@@ -206,7 +206,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &137484709
 Animator:
   serializedVersion: 3
@@ -321,7 +321,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &316368297
 Animator:
   serializedVersion: 3
@@ -436,7 +436,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &553116052
 Animator:
   serializedVersion: 3
@@ -550,7 +550,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &774146954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &778215235
 Animator:
   serializedVersion: 3
@@ -957,7 +957,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &1011015714
 Animator:
   serializedVersion: 3
@@ -1274,7 +1274,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &2017225747
 Animator:
   serializedVersion: 3
@@ -1465,6 +1465,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1402433927
       objectReference: {fileID: 0}
+    - target: {fileID: 4568531494900042070, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568531494942734853, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4568531494970779153, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1513,6 +1521,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4568531495151958473, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568531495668098634, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568531495783020774, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4568531495806061486, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -1520,6 +1540,14 @@ PrefabInstance:
     - target: {fileID: 4568531495806061486, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
       propertyPath: m_SortingLayerID
       value: 1402433927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568531495806061486, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568531496803813251, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c5a2f8ed45ff7547bc032b8975010ef, type: 3}
@@ -1535,6 +1563,7 @@ GameObject:
   - component: {fileID: 4568531496141868232}
   - component: {fileID: 4568531496141868231}
   - component: {fileID: 4568531496141868233}
+  - component: {fileID: 4568531496141868230}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1542,6 +1571,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4568531496141868230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4568531496141868229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f9887a5d5ef694eb3bfbcea80c188d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputX: 0
+  inputY: 0
+  isWalking: 0
+  isRunning: 0
+  isIdle: 0
+  isCarrying: 0
+  toolEffect: 0
+  isUsingToolRight: 0
+  isUsingToolLeft: 0
+  isUsingToolUp: 0
+  isUsingToolDown: 0
+  isLiftingToolRight: 0
+  isLiftingToolLeft: 0
+  isLiftingToolUp: 0
+  isLiftingToolDown: 0
+  isPickingRight: 0
+  isPickingLeft: 0
+  isPickingUp: 0
+  isPickingDown: 0
+  isSwingingToolRight: 0
+  isSwingingToolLeft: 0
+  isSwingingToolUp: 0
+  isSwingingToolDown: 0
+  idleRight: 0
+  idleLeft: 0
+  idleUp: 0
+  idleDown: 0
 --- !u!210 &4568531496141868231
 SortingGroup:
   m_ObjectHideFlags: 0

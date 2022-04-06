@@ -1,11 +1,10 @@
-
 using UnityEngine;
 
 public static class Settings
 {
     //Player Animation Params
-    public static int inputX;
-    public static int inputY;
+    public static int xInput;
+    public static int yInput;
     public static int isWalking;
     public static int isRunning;
     public static int isIdle;
@@ -23,27 +22,23 @@ public static class Settings
     public static int isPickingLeft;
     public static int isPickingUp;
     public static int isPickingDown;
-    public static int isSwingToolRight;
-    public static int isSwingToolLeft;
-    public static int isSwingToolUp;
-    public static int isSwingToolDown;
+    public static int isSwingingToolRight;
+    public static int isSwingingToolLeft;
+    public static int isSwingingToolUp;
+    public static int isSwingingToolDown;
 
     //Shared Animation Params
-    public static int idleRight;
-    public static int idleLeft;
     public static int idleUp; 
     public static int idleDown;
-
+    public static int idleLeft;
+    public static int idleRight;
 
     static Settings()
     {
-        inputX = Animator.StringToHash("inputX");
-        inputX = Animator.StringToHash("inputX");
-        inputY = Animator.StringToHash("inputY");
+        xInput = Animator.StringToHash("xInput");
+        yInput = Animator.StringToHash("yInput");
         isWalking = Animator.StringToHash("isWalking");
         isRunning = Animator.StringToHash("isRunning");
-        isIdle = Animator.StringToHash("isIdle");
-        isCarrying = Animator.StringToHash("isCarrying");
         toolEffect = Animator.StringToHash("toolEffect");
         isUsingToolRight = Animator.StringToHash("isUsingToolRight");
         isUsingToolLeft = Animator.StringToHash("isUsingToolLeft");
@@ -53,21 +48,19 @@ public static class Settings
         isLiftingToolLeft = Animator.StringToHash("isLiftingToolLeft");
         isLiftingToolUp = Animator.StringToHash("isLiftingToolUp");
         isLiftingToolDown = Animator.StringToHash("isLiftingToolDown");
+        isSwingingToolRight = Animator.StringToHash("isSwingingToolRight");
+        isSwingingToolLeft = Animator.StringToHash("isSwingingToolLeft");
+        isSwingingToolUp = Animator.StringToHash("isSwingingToolUp");
+        isSwingingToolDown = Animator.StringToHash("isSwingingToolDown");
         isPickingRight = Animator.StringToHash("isPickingRight");
         isPickingLeft = Animator.StringToHash("isPickingLeft");
         isPickingUp = Animator.StringToHash("isPickingUp");
         isPickingDown = Animator.StringToHash("isPickingDown");
-        isSwingToolRight = Animator.StringToHash("isSwingToolRight");
-        isSwingToolLeft = Animator.StringToHash("isSwingToolLeft");
-        isSwingToolUp = Animator.StringToHash("isSwingToolUp");
-        isSwingToolDown = Animator.StringToHash("isSwingToolDown");
 
         idleRight = Animator.StringToHash("idleRight");
         idleLeft = Animator.StringToHash("idleLeft");
         idleUp = Animator.StringToHash("idleUp");
         idleDown = Animator.StringToHash("idleDown");
-
-
     }
 
 }
