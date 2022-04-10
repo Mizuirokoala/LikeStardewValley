@@ -344,7 +344,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1050,7 +1050,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1222,7 +1222,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1345,7 +1345,7 @@ Transform:
   - {fileID: 316368295}
   - {fileID: 2017225745}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1803761409
 GameObject:
@@ -1412,7 +1412,7 @@ Transform:
   m_Children:
   - {fileID: 2069145953}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1927558342
 PrefabInstance:
@@ -1423,7 +1423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1682,7 +1682,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4568531496141868229}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f9887a5d5ef694eb3bfbcea80c188d, type: 3}
   m_Name: 
@@ -1943,7 +1943,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644793846018, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_LocalPosition.x
