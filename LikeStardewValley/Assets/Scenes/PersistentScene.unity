@@ -614,7 +614,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774146951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 797f93ff3bebe394c99fd4577561a89b, type: 3}
   m_Name: 
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 1
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1246931672}
   m_Lens:
@@ -1489,6 +1489,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7567556644068086815, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644068086815, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644068086815, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1402433927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644068086815, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7567556644424089697, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -1498,6 +1514,18 @@ PrefabInstance:
       value: 1402433927
       objectReference: {fileID: 0}
     - target: {fileID: 7567556644424089697, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644654173418, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644654173418, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1402433927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567556644654173418, guid: 4e6b5f897a61104479d1bdb56f400240, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
       objectReference: {fileID: 0}
