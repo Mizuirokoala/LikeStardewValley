@@ -30,7 +30,7 @@ public class Player : SingletonMonoBehaviour<Player>
     private bool isSwingingToolUp;
     private bool isSwingingToolDown;
 
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rigidBody2D;
     private Direction pDirection;
     private float movementSpeed;
     private bool _pInputDisabled;
@@ -39,27 +39,28 @@ public class Player : SingletonMonoBehaviour<Player>
     protected override void Awake()
     {
         base.Awake();
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidBody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         #region Player Input
+        if (!PlayerInputIsDisabled)
+        {
+            ResetAnimationTriggers();
 
-        ResetAnimationTriggers();
+            PlayerMovementInput();
 
-        PlayerMovementInput();
+            PlayerWalkInput();
 
-        PlayerWalkInput();
-
-        //Send Event to any listeners
-        EventHandler.CallMovementEvent(xInput, yInput, isWalking, isRunning, isIdle,
-                isCarrying, toolEffect, isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
-                isLiftingToolRight, isLiftingToolLeft, isLiftingToolUp, isLiftingToolDown,
-                isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
-                isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-                false, false, false, false);
-
+            //Send Event to any listeners
+            EventHandler.CallMovementEvent(xInput, yInput, isWalking, isRunning, isIdle, isCarrying, toolEffect,
+                    isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+                    isLiftingToolRight, isLiftingToolLeft, isLiftingToolUp, isLiftingToolDown,
+                    isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
+                    isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
+                    false, false, false, false);
+        }
         #endregion
 
     }
@@ -75,7 +76,7 @@ public class Player : SingletonMonoBehaviour<Player>
     {
         Vector2 move = new Vector2(xInput * movementSpeed * Time.deltaTime, yInput * movementSpeed * Time.deltaTime);
 
-        rigidbody2D.MovePosition(rigidbody2D.position + move);
+        rigidBody2D.MovePosition(rigidBody2D.position + move);
     }
 
     private void ResetAnimationTriggers()
